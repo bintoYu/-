@@ -12,7 +12,7 @@ public class ReentrantLockCondition
 	ReentrantLock lock = new ReentrantLock(true);
 	Condition conditionA = lock.newCondition();
 	Condition conditionB = lock.newCondition();
-	
+
 	public void testWaitA(int i)
 	{
 		lock.lock();
@@ -30,8 +30,8 @@ public class ReentrantLockCondition
 			lock.unlock();
 		}
 	}
-	
-	
+
+
 	public void testSignalA(int i)
 	{
 		lock.lock();
@@ -45,7 +45,7 @@ public class ReentrantLockCondition
 			lock.unlock();
 		}
 	}
-	
+
 	public void testWaitB(int i)
 	{
 		lock.lock();
@@ -63,8 +63,8 @@ public class ReentrantLockCondition
 			lock.unlock();
 		}
 	}
-	
-	
+
+
 	public void testSignalB(int i)
 	{
 		lock.lock();
@@ -78,8 +78,8 @@ public class ReentrantLockCondition
 			lock.unlock();
 		}
 	}
-	
-	
+
+
 	public static void main(String[] args)
 	{
 		ReentrantLockCondition test1 = new ReentrantLockCondition();
@@ -111,12 +111,12 @@ public class ReentrantLockCondition
 		{
 			e.printStackTrace();
 		}
-		
+
 		exec.execute(()->
 		{
 			test1.testSignalA(10);
 		});
-		
+
 		try
 		{
 			Thread.sleep(1000);
@@ -125,7 +125,7 @@ public class ReentrantLockCondition
 		{
 			e.printStackTrace();
 		}
-		
+
 		exec.execute(()->
 		{
 			test1.testSignalB(11);
