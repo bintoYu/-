@@ -8,13 +8,13 @@ import java.util.logging.Logger;
 public class SemaphoreExample
 {
 	private final static int threadCount = 20;
-	
+
 	public static void main(String[] args)
 	{
 		ExecutorService exec = Executors.newCachedThreadPool();
-		
+
 		//在构造函数中设置好资源数
-		final Semaphore semaphore = new Semaphore(3);  
+		final Semaphore semaphore = new Semaphore(3);
 		for(int i = 0; i < threadCount; i++){
 			final int threadNum = i;
 			exec.execute(() -> {
@@ -32,7 +32,7 @@ public class SemaphoreExample
 		}
 		exec.shutdown();
 	}
-	
+
 	private static void test(int num)
 	{
 		try

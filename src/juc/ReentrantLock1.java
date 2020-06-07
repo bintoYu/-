@@ -6,7 +6,7 @@ public class ReentrantLock1
 {
 	//默认是非公平锁
 	ReentrantLock lock = new ReentrantLock();
-	
+
 	public void test(int i)
 	{
 		lock.lock();

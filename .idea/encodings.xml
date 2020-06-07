@@ -3,7 +3,10 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/juc/Depot.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/juc/ReenTrantLock多Condition.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/juc/ReentrantLock1.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/juc/ReentrantLockCondition.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/juc/SemaphoreExample.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/juc/SynchronizeTest1.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/other/两百秒内返回结果或者空.java" charset="GBK" />
   </component>
 </project>

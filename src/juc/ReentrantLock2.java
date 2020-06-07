@@ -4,15 +4,15 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentrantLock2
 {
-	//设置公平锁
+	//浣跨敤闈炲叕骞抽攣
 	ReentrantLock lock = new ReentrantLock(true);
-	
+
 	public void test(int i)
 	{
 		lock.lock();
 		try
 		{
-			System.out.println("线程" + i +"已锁..............");
+			System.out.println("绾跨▼" + i +"宸查攣..............");
 			Thread.sleep(2000);
 		}catch(Exception e)
 		{
@@ -22,6 +22,6 @@ public class ReentrantLock2
 		{
 			lock.unlock();
 		}
-		System.out.println("线程" + i +"解锁...............");
+		System.out.println("绾跨▼" + i +"瑙ｉ攣...............");
 	}
 }
