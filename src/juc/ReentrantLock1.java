@@ -10,6 +10,7 @@ public class ReentrantLock1
 	public void test(int i)
 	{
 		lock.lock();
+//		lock.tryLock();
 		try
 		{
 			System.out.println("Ïß³Ì" + i +"ÒÑËø..............");

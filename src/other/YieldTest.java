@@ -1,4 +1,4 @@
-package test;
+package other;
 
 
 class ThreadA extends Thread{
@@ -14,9 +14,9 @@ class ThreadA extends Thread{
 			catch (InterruptedException e)
 			{
 				e.printStackTrace();
-			} // ÐÝÃß100ms
+			} // ï¿½ï¿½ï¿½ï¿½100ms
             System.out.printf("%s [%d]:%d\n", this.getName(), this.getPriority(), i); 
-            // iÕû³ý4Ê±£¬µ÷ÓÃyield
+            // iï¿½ï¿½ï¿½ï¿½4Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½yield
             if (i%3 == 0)
                 Thread.yield();
         } 
