@@ -7,7 +7,7 @@ public class ReentrantLockUnfailTest {
 
     public static void main(String[] args) {
         //默认是非公平锁
-        ReentrantLock lock = new ReentrantLock();
+        ReentrantLock lock = new ReentrantLock(false);
 
         //先生成一个线程1，先把锁抢了不放
         new Thread(()->{
